@@ -55,7 +55,7 @@
 .inputGrupo input:focus
 .inputGrupo select:focus
 .inputGrupo textarea:focus{
-    border-color: #00274C;
+    border-color: #003a70;
     outline: none;
     background-color: #fff;
     box-shadow: 0 0 0 2px rgba(1, 44, 85, 0.1);
@@ -70,4 +70,40 @@
 .inputGrupo textarea{
     resize: vertical;
     min-height: 50px;
+}
+
+.submitBotao{
+    background-color: #1351d8;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submitBotao:hover{
+    background-color: #00274C;
+    color: white;
+    transform: translateY(-2px);
+}
+
+@media(max-width: 768px){
+
+    .ContatoPagina{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .formularioContainer{
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+    
 }
